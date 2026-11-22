@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Star Sapphire Caper — a midnight museum heist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0b14; height: 100%; overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #wrap { position: relative; width: 1280px; height: 720px; max-width: 100vw; max-height: 100vh; }
+  canvas { display: block; width: 100%; height: 100%; background: #101018; cursor: crosshair; }
+  #fallback { position: absolute; left: 0; right: 0; bottom: 8px; text-align: center;
+    color: #8a8a9a; font: 12px/1.4 system-ui, sans-serif; pointer-events: none; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="fallback">WASD / arrows to move &middot; Shift to sneak &middot; 1 noise-maker &middot; 2 camera loop &middot; 3 lockpick &middot; E grab loot</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
